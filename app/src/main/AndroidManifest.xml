@@ -18,7 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.WorkManagerActivity"></activity>
+        <activity android:name=".activity.WorkManagerActivity" />
+        <activity android:name=".activity.StatedActivity" />
+        <activity android:name=".activity.SpanActivity" />
     </application>
 
 </manifest>

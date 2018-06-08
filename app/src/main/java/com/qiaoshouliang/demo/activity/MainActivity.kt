@@ -13,7 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val source = arrayOf(LifecycleActivity::class.java,
-                WorkManagerActivity::class.java)
+                WorkManagerActivity::class.java,
+                StatedActivity::class.java,
+                SpanActivity::class.java)
 
         val adapter = DemoAdapter(source)
         adapter.setClickListener {

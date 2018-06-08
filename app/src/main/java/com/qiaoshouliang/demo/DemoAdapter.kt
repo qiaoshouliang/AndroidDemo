@@ -25,7 +25,7 @@ class DemoAdapter(val data: Array<Class<out AppCompatActivity>>) : RecyclerView.
     override fun getItemCount() = data.size
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.tv_function_name.text = data[position].simpleName
+        holder.tv_function_name.text = data[position].simpleName.replace("Activity", "")
         holder.containerView?.click { callback?.invoke(position) }
     }
 
